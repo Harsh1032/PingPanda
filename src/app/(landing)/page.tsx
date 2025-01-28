@@ -1,7 +1,8 @@
-import { Heading } from "./components/Heading"
-import { MaxWidthWrapper } from "./components/MaxWidthWrapper"
 import { Check } from "lucide-react"
-import { ShinyButton } from "./components/ShinyButton"
+import { Heading } from "@/components/Heading"
+import { MaxWidthWrapper } from "@/components/MaxWidthWrapper"
+import { ShinyButton } from "@/components/ShinyButton"
+
 
 const Page = () => {
   return (
@@ -20,7 +21,7 @@ const Page = () => {
             </div>
 
             <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              Pulse is the easiest way to monitor your SaaS. Get instant
+              PingPanda is the easiest way to monitor your SaaS. Get instant
               notifications for{" "}
               <span className="font-semibold text-gray-700">
                 sales, new users, or any other event

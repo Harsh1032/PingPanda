@@ -1,4 +1,4 @@
-# Pulse - A Modern Fullstack Event Monitoring SaaS
+# PingPanda - A Modern Fullstack Event Monitoring SaaS
 
 Built with the Next.js App Router, Postgres, TypeScript, Tailwind & Clerk
 
@@ -23,7 +23,7 @@ Built with the Next.js App Router, Postgres, TypeScript, Tailwind & Clerk
 To get started with this project, run
 
 ```bash
-  git clone https://github.com/Harsh1032/Pulse.git
+  git clone https://github.com/Harsh1032/PingPanda.git
 ```
 
 and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
