@@ -1,5 +1,3 @@
-export const runtime = "nodejs"
-
 import { FREE_QUOTA, PRO_QUOTA } from "@/config"
 import { db } from "@/db"
 import { DiscordClient } from "@/lib/discord-client"
