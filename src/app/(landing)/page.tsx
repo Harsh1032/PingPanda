@@ -52,7 +52,7 @@ const Page = async () => {
             </div>
 
             <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              PingPanda is the easiest way to monitor your SaaS. Get instant
+              Pulse is the easiest way to monitor your SaaS. Get instant
               notifications for{" "}
               <span className="font-semibold text-gray-700">
                 sales, new users, or any other event
@@ -184,7 +184,7 @@ const Page = async () => {
                     Track Any Event
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    From new user signups to successful payments, PingPanda
+                    From new user signups to successful payments, pulse
                     notifies you for all critical events in your SaaS.
                   </p>
                 </div>
@@ -240,7 +240,7 @@ const Page = async () => {
                     Easy Integration
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    Connect PingPanda with your existing workflows in minutes
+                    Connect Pulse with your existing workflows in minutes
                     and call our intuitive logging API from any language.
                   </p>
                 </div>
@@ -250,7 +250,7 @@ const Page = async () => {
                     <div className="flex bg-gray-800/40 ring-1 ring-white/5">
                       <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
                         <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
-                          pingpanda.js
+                          pulse.js
                         </div>
                       </div>
                     </div>
@@ -306,7 +306,7 @@ const Page = async () => {
               </div>
 
               <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
-                PingPanda has been a game-changer for me. I've been using it for
+                Pulse has been a game-changer for me. I've been using it for
                 two months now and seeing sales pop up in real-time is super
                 satisfying.
               </p>
@@ -340,7 +340,7 @@ const Page = async () => {
               </div>
 
               <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
-                PingPanda's been paying off for our SaaS. Nice to have simple
+                Pulse been paying off for our SaaS. Nice to have simple
                 way to see how we're doing day-to-day. Definitely makes our
                 lives easier.
               </p>
