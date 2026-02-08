@@ -9,8 +9,17 @@ import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Icons } from "@/components/icons";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-const Page = () => {
+const Page = async () => {
+
+  const { userId } = await auth();
+
+  // If signed in, don't show landing page
+  if (userId) {
+    redirect("/dashboard");
+  }
 
   const codeSnippet = `await fetch("http://localhost:3000/api/v1/events", {
     method: "POST",
