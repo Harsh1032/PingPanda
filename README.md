@@ -2,9 +2,10 @@
 
 Built with the Next.js App Router, Postgres, TypeScript, Tailwind & Clerk
 
+<p class="has-line-data" data-line-start="4" data-line-end="5">https://pulsepanda.netlify.app/</p>
+
 ![Project Image](https://github.com/joschan21/pingpanda/blob/main/public/thumbnail.png)
 
-<p class="has-line-data" data-line-start="4" data-line-end="5">https://pulsepanda.netlify.app/</p>
 
 ## Features
 
