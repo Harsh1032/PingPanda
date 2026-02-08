@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { AnimatePresence, motion } from "motion/react";
 import React, {
@@ -13,7 +13,7 @@ export function AnimatedListItem({ children }: { children: React.ReactNode }) {
     initial: { scale: 0, opacity: 0 },
     animate: { scale: 1, opacity: 1, originY: 0 },
     exit: { scale: 0, opacity: 0 },
-    transition: { type: "spring", stiffness: 350, damping: 40 },
+    transition: { type: "spring" as const, stiffness: 350, damping: 40 },
   };
 
   return (
@@ -31,10 +31,7 @@ export interface AnimatedListProps extends ComponentPropsWithoutRef<"div"> {
 export const AnimatedList = React.memo(
   ({ children, className, delay = 1000, ...props }: AnimatedListProps) => {
     const [index, setIndex] = useState(0);
-    const childrenArray = useMemo(
-      () => React.Children.toArray(children),
-      [children],
-    );
+    const childrenArray = useMemo(() => React.Children.toArray(children), [children]);
 
     useEffect(() => {
       if (index < childrenArray.length - 1) {
@@ -46,26 +43,23 @@ export const AnimatedList = React.memo(
       }
     }, [index, delay, childrenArray.length]);
 
-    const itemsToShow = useMemo(() => {
-      const result = childrenArray.slice(0, index + 1).reverse();
-      return result;
-    }, [index, childrenArray]);
+    const itemsToShow = useMemo(
+      () => childrenArray.slice(0, index + 1).reverse(),
+      [index, childrenArray]
+    );
 
     return (
-      <div
-        className={`flex flex-col-reverse items-center gap-4 ${className}`}
-        {...props}
-      >
+      <div className={`flex flex-col-reverse items-center gap-4 ${className ?? ""}`} {...props}>
         <AnimatePresence>
-          {itemsToShow.map((item) => (
-            <AnimatedListItem key={(item as React.ReactElement).key}>
+          {itemsToShow.map((item, i) => (
+            <AnimatedListItem key={(item as React.ReactElement).key ?? i}>
               {item}
             </AnimatedListItem>
           ))}
         </AnimatePresence>
       </div>
     );
-  },
+  }
 );
 
 AnimatedList.displayName = "AnimatedList";
